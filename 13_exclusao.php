@@ -18,6 +18,7 @@ if ($conn->connect_error) {
 // Verifica se o id foi passado via URL (id a ser excluído)
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
+    $id = $_GET['id'];
 
     // Deleta o registro do cliente com ID específicado
     $sql = "DELETE FROM clientes WHERE id='$id'";
